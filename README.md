@@ -19,7 +19,6 @@ To use PHP-Hash to generate encrypted URLs, follow these steps:
 
 1. **Initialization**:
 ```php
-<?php
 use carry0987\Hash\Hash;
 
 // Initialize with your signature key and signature salt
