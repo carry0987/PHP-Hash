@@ -19,7 +19,7 @@ class Hash
     // Custom prefix and suffix for encryptedPath
     protected ?string $prefix = null; // Custom prefix for encryptedPath
     protected ?string $suffix = null; // Custom suffix for encryptedPath
-    protected ?callable $pathFormatterCallback = null; // Custom path formatter callback
+    protected $pathFormatterCallback = null; // Custom path formatter callback
 
     /**
      * Hash constructor.
@@ -166,7 +166,7 @@ class Hash
         return [
             'ivLength' => $ivLength,
             'tagLength' => $tagLength,
-            'aad' => $this->aad,
+            'aad' => (string) $this->aad,
         ];
     }
 
