@@ -30,10 +30,10 @@ $hash = new Hash('your_hex_signature_key', 'your_hex_signature_salt');
    Customize encryption settings as needed.
 ```php
 // Set a custom encryption cipher
-$hash->setCipher('aes-128-gcm');
+$hash->setCipher('aes-256-gcm');
 
 // Set a custom encryption algorithm for generating binary signatures
-$hash->setEncryptAlgorithm('sha512');
+$hash->setEncryptAlgorithm('sha256');
 
 // Optionally, set a custom Additional Authenticated Data (AAD) for AEAD ciphers
 $hash->setAAD('your_custom_aad');
