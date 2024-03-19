@@ -1,6 +1,6 @@
 {
     "name": "carry0987/hash",
-    "description": "PHP-Hash is a comprehensive library designed to facilitate the generation of securely encrypted URLs. With support for customizable encryption algorithms and AEAD (Authenticated Encryption with Additional Data) cipher modes, it offers flexibility while ensuring the integrity and authenticity of the data.",
+    "description": "PHP-Hash is a comprehensive library designed to facilitate the generation of securely encrypted URLs.",
     "type": "library",
     "require": {
         "php": ">=7.4"
