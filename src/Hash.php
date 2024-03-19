@@ -14,12 +14,12 @@ class Hash
     // Encryption options
     protected string $encryptAlgorithm = 'sha256'; // Default encryption algorithm
     protected string $cipher = 'aes-256-gcm'; // Default encryption method
-    protected string $aad = null; // Default AAD
+    protected ?string $aad = null; // Default AAD
 
     // Custom prefix and suffix for encryptedPath
-    protected string $prefix = null; // Custom prefix for encryptedPath
-    protected string $suffix = null; // Custom suffix for encryptedPath
-    protected callable $pathFormatterCallback = null; // Custom path formatter callback
+    protected ?string $prefix = null; // Custom prefix for encryptedPath
+    protected ?string $suffix = null; // Custom suffix for encryptedPath
+    protected ?callable $pathFormatterCallback = null; // Custom path formatter callback
 
     /**
      * Hash constructor.
