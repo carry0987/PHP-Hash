@@ -25,11 +25,17 @@ class Hash
      * Hash constructor.
      * @param string $signatureKey Hexadecimal signature key.
      * @param string $signatureSalt Hexadecimal signature salt.
+     * @param string|null $sourceKey Hexadecimal source key.
      */
-    public function __construct(string $signatureKey, string $signatureSalt)
+    public function __construct(string $signatureKey, string $signatureSalt, string $sourceKey = null)
     {
         $this->signatureKey = hex2bin($signatureKey);
         $this->signatureSalt = hex2bin($signatureSalt);
+
+        // Set source key if provided
+        if ($sourceKey !== null) {
+            $this->setSourceKey($sourceKey);
+        }
     }
 
     /**
