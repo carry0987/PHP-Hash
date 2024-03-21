@@ -142,7 +142,7 @@ class Hash
      * 
      * @throws HashException If encryption fails or binary signature cannot be generated.
      */
-    public function generateEncryptedUrl(string $originalUrl)
+    public function generateURL(string $originalUrl)
     {
         $encryptedBinaryUrl = self::encryptData($originalUrl, $this->sourceKey ?? $this->signatureKey);
         $encryptedUrl = HTTPUtil::base64UrlEncode($encryptedBinaryUrl);

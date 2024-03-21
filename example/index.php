@@ -13,7 +13,7 @@ $encryptor->setSourceKey($sourceKey);
 $originalUrl = 'https://i.imgur.com/awglyHB.jpg';
 
 try {
-    $signedUrl = $encryptor->generateEncryptedUrl($originalUrl);
+    $signedUrl = $encryptor->generateURL($originalUrl);
     echo 'http://127.0.0.1:3000' . $signedUrl;
 } catch (Exception $e) {
     // handle exceptions
